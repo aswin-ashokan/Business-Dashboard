@@ -1,0 +1,106 @@
+:root {
+    --progress-bar-width: 30px;
+    --progress-bar-height: 30px;
+    --font-size: 1rem;
+  }
+*{
+    box-sizing: border-box;
+    color: #7f7c8b;
+}
+.bodyContainer{
+    background-color: #f8f7fa ;
+}
+.mt-n1{
+    margin-top: -1rem;
+}
+.mb-n1{
+    margin-top: -1rem;
+}
+.text-successLight{
+    color: #51cf89;
+}
+/* header styles */
+.header__userImg{
+    border-radius: 50%;
+}
+.header .bi{
+font-size: 20px;
+}
+#header__searchBtn{
+    color: #818083 ;
+}
+.header__notiBadge{
+    margin-top: 10px;
+    margin-left: 1px;
+}
+.header__statusBadge{
+    margin-left: -6px;
+}
+
+/* progress bar styling*/
+.circular-progress {
+    width: var(--progress-bar-width);
+    height: var(--progress-bar-height);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .inner-circle {
+    position: absolute;
+    width: calc(var(--progress-bar-width) - 10px);
+    height: calc(var(--progress-bar-height) - 10px);
+    border-radius: 50%;
+  }
+  .percentage {
+    display: none;
+    position: relative;
+    font-size: var(--font-size);
+    color: rgb(0, 0, 0, 0.8);
+  }
+  .progress{
+    width: 120px;
+  }
+  .progress-bar {
+    width: 0;
+    animation: progress 2.5s ease-in-out forwards;
+  } 
+  @keyframes progress {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  } 
+
+/* BarChart1 - Earning Report - Row2Card1 */
+/* #earningChartContainer{
+    width: 100%;
+    height: 60%;
+}
+#earningChart{
+    width: 100%;
+    height: 60%;
+}
+#revenueChart{
+    height: 70%;
+}
+
+#salesChartContainer{
+    height: 100%;
+}
+#salesChart{
+    margin-top: 20px;
+    height: 100%;
+}
+#projectStatusChartContainer{
+    height: 100%;
+    margin-top: 30px;
+}
+#projectStatusChart{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+} */
